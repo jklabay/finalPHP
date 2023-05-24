@@ -18,9 +18,11 @@
 		<title>Main Menu</title>
 	</head>
 	<body>
-		<h2>Welcome <?php echo $_SESSION["logged_inuser"]; ?></h2>
-		<p><a href="">Add Item</a></p>
-		<p><a href="">Search Item</a></p>
-		<p><a href="logout.php">Logout</a></p>
+        <div class="login-box">
+            <h2>Welcome <?php echo $_SESSION["logged_inuser"]; ?></h2>
+            <p><a href="">Add Item</a></p>
+            <p><a href="">Search Item</a></p>
+            <p><a href="logout.php">Logout</a></p>
+        </div>
 	</body>
 </html>
