@@ -78,9 +78,9 @@ if (isset($_POST["login"])) {
       </div>
       <button type="submit" name="login">Submit</button>
       <?php if (isset($error)) {
-          echo '<p class="error">' . $error . '</p>';
+          echo '<p class="error" style="color: red; font-size: 20px; margin-top: 20px; font-weight:bolder;">' . $error . '</p>';
       } ?>
     </form>
   </div>
 </body>
-</html>
+</html> 
