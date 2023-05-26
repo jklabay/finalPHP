@@ -42,7 +42,16 @@ body {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+  caret-color: transparent;
+  background-color: transparent;
 }
+
+.login-box input[type="text"]:-webkit-autofill,
+			.login-box input[type="password"]:-webkit-autofill {
+				-webkit-box-shadow: 0 0 0 30px #82e65e inset;
+				-webkit-text-fill-color: #fff;
+			}
+
 .login-box .user-box label {
   position: absolute;
   top:0;
@@ -166,6 +175,8 @@ body {
   }
 }
 
+
+
 .login-box .user-box .button {
 	display: inline-block;
 	padding: 20px 20px;
@@ -191,4 +202,33 @@ body {
 	            0 0 25px #bd9d0b,
 	            0 0 50px #f4e403,
 	            0 0 100px #d5cf1e;
+}
+
+.login-box .user-box select {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.login-box .user-box select::-ms-expand {
+  display: none;
+}
+
+.login-box .user-box select option {
+  background-color: #30142b;
+  color: #fff;
+}
+
+.login-box .user-box select option:checked {
+  background-color: #f68e44;
+  color: #fff;
 }
