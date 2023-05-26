@@ -19,10 +19,13 @@
 	<div class="login-box">
 		<h2>Welcome <?php echo $_SESSION["logged_inuser"]; ?></h2>
 		<div class="user-box">
-			<a href="" class="button">Add Item</a>
+			<a href="create.php" class="button">Add Item</a>
 		</div>
 		<div class="user-box">
-			<a href="" class="button">Search Item</a>
+			<a href="search.php" class="button">Search Item</a>
+		</div>
+		<div class="user-box">
+			<a href="view.php" class="button">View Items</a>
 		</div>
 		<div class="user-box">
 			<a href="logout.php" class="button">Logout</a>
